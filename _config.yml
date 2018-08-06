@@ -3,10 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: summir
+title: summir的个人博客
 subtitle: 天行健，君子以自强不息
 description: 记录学习的技能和遇到的问题
-keywords: 
 author: summir
 language: zh_CN
 timezone: Asia/Shanghai
@@ -28,11 +27,6 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
-# Hexo localsearch
-search:
-  path: search.xml
-  field: all
-
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
@@ -45,7 +39,6 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  hljs: true
   line_number: true
   auto_detect: false
   tab_replace:
@@ -79,11 +72,11 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: aria
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repository: git@github.com:summir/summir.github.io.git
-  branch: hexo
+  branch: master

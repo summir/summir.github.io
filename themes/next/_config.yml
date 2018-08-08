@@ -823,8 +823,8 @@ pace: false
 # pace_theme: pace-theme-center-simple
 pace_theme: pace-theme-minimal
 
-# Canvas-nest
-# Dependencies: https://github.com/theme-next/theme-next-canvas-nest
+#Canvas-nest
+#Dependencies: https://github.com/theme-next/theme-next-canvas-nest
 canvas_nest: true
 
 # JavaScript 3D library.
@@ -832,7 +832,7 @@ canvas_nest: true
 # three_waves
 three_waves: false
 # canvas_lines
-canvas_lines: false
+canvas_lines: true
 # canvas_sphere
 canvas_sphere: false
 
@@ -905,7 +905,7 @@ vendors:
 
   # Internal version: 1.0.0
   # https://github.com/hustcc/canvas-nest.js
-  canvas_nest:
+  canvas_nest: true
 
   # Internal version: 1.0.0
   # See: https://github.com/theme-next/theme-next-three

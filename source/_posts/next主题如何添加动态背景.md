@@ -1,7 +1,7 @@
 ---
 title: next主题如何添加动态背景
 date: 2018-08-08 14:35:03
-tags: next主题
+tags: "next主题"
 categories: themes
 ---
 # next主题如何添加动态背景

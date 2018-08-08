@@ -26,3 +26,11 @@ categories: themes
 * `hexo clean` `hexo g` `hexo s`就可以预览了。
 
 最后那个语言问题，并不是next官网和google的一堆信息都是把languages改成zh_Hans，这是无效的，需要在站点配置文件_comfig.yml中把languages改成zh_CN。
+
+当然这个方法我也试过了，不行。还是得重新找方法，最后还是使用修改_layout.swig奏效。方法就是在<body>里面加入
+```  
+{% if theme.canvas_nest %}
+  <script type="text/javascript" color="0,0,0" opacity='0.5' zIndex="-1" count="150" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+{% endif %}
+```
+最后`hexo clean` `hexo g` `hexo s`ok。

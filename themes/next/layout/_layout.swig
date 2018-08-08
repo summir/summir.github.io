@@ -2,9 +2,7 @@
 
 {# NexT version #}
 {% set version = next_env('version') %}
-{% if theme.canvas_nest %}
-  <script type="text/javascript" color="0,0,0" opacity='0.5' zIndex="-1" count="150" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-{% endif %}
+
 {# Language & Config #}
 {% set title = __('title') !== 'title' && __('title') || config.title %}
 {% set subtitle = __('subtitle') !== 'subtitle' && __('subtitle') || config.subtitle %}
@@ -24,6 +22,7 @@
   {% include '_third-party/analytics/index.swig' %}
   {{ partial('_scripts/noscript.swig', {}, {cache: theme.cache.enable}) }}
 </head>
+
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
 
@@ -119,5 +118,8 @@
   {% include '_third-party/exturl.swig' %}
   {% include '_third-party/bookmark.swig' %}
   {% include '_third-party/copy-code.swig' %}
+  {% if theme.canvas_nest %}
+  <script type="text/javascript" color="0,0,0" opacity='0.5' zIndex="-1" count="150" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+{% endif %}
 </body>
 </html>

@@ -18,7 +18,7 @@ categories: themes
 	# Dependencies: https://github.com/theme-next/theme-next-canvas-nest
 ```
 
-在这个网站上 https://github.com/theme-next/theme-next-canvas-nest的README.md清楚地给出了next的背景动态使用：
+在这个网站上 https://github.com/theme-next/theme-next-canvas-nest 的README.md清楚地给出了next的背景动态使用：
 
 * 进入`themes/next/source/lib`路径,输入`$ git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest`
 * 在next的`_config.yml`修改canvas_nest: true

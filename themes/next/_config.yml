@@ -60,10 +60,10 @@ rss:
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  since: 2018
+  #since: 2018
 
   # Icon between year and copyright info.
-  icon: heart
+  icon: 
     # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons
     # `heart` is recommended with animation in red (#ff0000).
     name: user
@@ -186,7 +186,7 @@ links_title: 神奇的链接
 #links_layout: block
 links_layout: inline
 links:
-  😆 网易云音乐 😆: https://music.163.com/#/user/home?id=86590096
+  😆 网易云音乐 😆: https://music.163.com/#/user/home?id=15611755
 
 # Sidebar Avatar
 avatar:

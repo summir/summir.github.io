@@ -305,6 +305,154 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://summir.github.io/2020/01/16/mianshiti/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="summir">
+      <meta itemprop="description" content="记录学习的技能和遇到的问题">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="summir的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/01/16/mianshiti/" itemprop="url">
+                  记一下恒生电子的面试题
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-01-16 15:51:31 / 修改时间：15:58:26" itemprop="dateCreated datePublished" datetime="2020-01-16T15:51:31+08:00">2020-01-16</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>于昨日在滨江恒生电子经历了一次面试，总发觉自己的能力目前还有所欠缺。</p>
+<p>且有道面试编程题在面试中没有回答上来，卡在我脑海里如鲠在喉，现在终于想出解题方案，特指更新一次博客，记录下这道题。</p>
+<blockquote>
+<p>给定一个字符串作为输入，将其中的数字用数字前临近的字母序列进行替换，字母序列重复的次数等于该数字，最后将字符串输出。例：输入“<strong><em>\</em>a1bc3d1**</strong>”，输出“<strong><em>\</em>abcbcbcd**</strong>”。</p>
+</blockquote>
+<p>这道题的解题思路很简单，就是把这个字符串作为数组输入，判断其中是否有整数类型，有就重复，没有就跳过。</p>
+<p>下面是代码：<code></code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">def get_decode(str):</span><br><span class="line">    length = len(str)</span><br><span class="line">    i = 0</span><br><span class="line">    temp_dir = []</span><br><span class="line">    result = &apos;&apos;</span><br><span class="line">    while i &lt;length:</span><br><span class="line">        if str[i] in [&apos;0&apos;,&apos;1&apos;,&apos;2&apos;,&apos;3&apos;,&apos;4&apos;,&apos;5&apos;,&apos;6&apos;,&apos;7&apos;,&apos;8&apos;,&apos;9&apos;]:</span><br><span class="line">            if temp_dir:</span><br><span class="line">                for j in range(int(str[i])):</span><br><span class="line">                    result += &apos;&apos;.join(temp_dir)</span><br><span class="line">                temp_dir = []</span><br><span class="line">        else:</span><br><span class="line">            temp_dir.append(str[i])</span><br><span class="line">        i+=1</span><br><span class="line">    print(result)</span><br><span class="line">    print(temp_dir)</span><br><span class="line">str = input(&quot;请输入&quot;)</span><br><span class="line">get_decode(str)</span><br></pre></td></tr></table></figure>
+<p>记录自己失败的经历，才能鞭策自己努力。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://summir.github.io/2019/12/25/曹大语录/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2189,7 +2337,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2241,7 +2389,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">9</span>
+                      
+                    
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -2316,7 +2466,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
